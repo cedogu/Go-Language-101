@@ -1,0 +1,3 @@
+Go Modül oluşturma
+
+go mod init (module name)
