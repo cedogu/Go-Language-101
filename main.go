@@ -1,16 +1,16 @@
 package main
 
-import (
-	// "fmt"
+import "golesson/loops"
 
-	"golesson/conditionals"
-	// "golesson/variables"
-)
+// "fmt"
+
+// "golesson/variables"
 
 func main() {
 
 	// variables.Demo1()
 	// fmt.Print()
 	// conditionals.Demo2()
-	conditionals.Workshop()
+	// conditionals.Workshop()
+	loops.Workshop1()
 }

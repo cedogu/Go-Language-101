@@ -1,3 +1,23 @@
 Go Modül oluşturma
 
 go mod init (module name)
+
+for döngüsü*---
+var text string = "Hi,world"
+i:=5
+for i<=5 {
+
+ftm.Println(text)
+i= i+1 } 
+şeklinde bir döngü olustururuz ve main.go dosyasında da çıktısını alırız.
+i +1 şeklinde yazmamızın sebebi döngünün sonsuz olmamasını sağlamak.
+
+ya da bildiğimiz klasik yöntemle;
+
+for i := 0; i <= 10; i++ {
+		fmt.Println(i)
+	}
+	fmt.Print("loop is over.")
+
+şeklinde de yapabiliriz.
+
