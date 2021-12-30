@@ -21,3 +21,28 @@ for i := 0; i <= 10; i++ {
 
 şeklinde de yapabiliriz.
 
+
+Asal sayı
+
+func Workshop2() {
+
+	number := 0
+	fmt.Println("Please enter a number:") //to read the given number below, we use fmt.Scanln method!
+	fmt.Scanln(&number)
+
+	primenumber := true
+	for i := 2; i < number; i++ {
+		if number%i == 0 {
+			primenumber = false
+		}
+	}
+	if primenumber == true {
+		fmt.Println("Your result is a prime number")
+	} else {
+		fmt.Println("Your result is not a prime number")
+	}
+
+}
+
+
+
