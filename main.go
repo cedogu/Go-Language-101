@@ -1,10 +1,8 @@
 package main
 
-import "golesson/loops"
+import "golesson/arrays"
 
 // "fmt"
-
-// "golesson/variables"
 
 func main() {
 
@@ -12,5 +10,6 @@ func main() {
 	// fmt.Print()
 	// conditionals.Demo2()
 	// conditionals.Workshop()
-	loops.Workshop3()
+	// loops.Workshop3()
+	arrays.Demo2()
 }
