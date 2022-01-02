@@ -15,6 +15,10 @@ func Demo3() {
 			biggest = numbers[i]
 		}
 
+		//i'yi 0'dan baslattık ve döngü icindeki tüm sayıları dolasacak.
+		//i'de bulunan hangi sayı en büyük sayı bizim numbers'ın i değerine eşit olacak.
+		//i ilk önce 10 ile baslayacak, sonra 20-30-40 ve en son 50'de kalacak cünkü en büyük sayımız 50'ye eşit olacak.
+
 	}
 
 	fmt.Println("Biggest number is : ", biggest)
