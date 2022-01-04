@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"golesson/functions"
+	"golesson/maps"
 )
 
 func main() {
@@ -27,15 +26,17 @@ func main() {
 	// fmt.Println("multiplication: ", result3)
 	// fmt.Println("division: ", result4)
 
-	var sonuc = functions.ToplaVariadic(1, 4, 6, 3, 10)
-	fmt.Println(sonuc)
-	fmt.Println(functions.ToplaVariadic(10, 12, 3))
-	fmt.Println(functions.ToplaVariadic(2, 5))
+	// var sonuc = functions.ToplaVariadic(1, 4, 6, 3, 10)
+	// fmt.Println(sonuc)
+	// fmt.Println(functions.ToplaVariadic(10, 12, 3))
+	// fmt.Println(functions.ToplaVariadic(2, 5))
 
-	//iki türlü yazma şekli vardır. biz yukarıdaki gibi veirriz ve Go otomatik olarak onları DİZİ yapar.
-	//ya da aşagıdaki gibi direkt olarak array verebiliriz.
-	//elimizdeki array'ı da buraya yollayabiliriz.
-	sayilar := []int{4, 5, 6}
-	fmt.Println(functions.ToplaVariadic(sayilar...))
+	// //iki türlü yazma şekli vardır. biz yukarıdaki gibi veirriz ve Go otomatik olarak onları DİZİ yapar.
+	// //ya da aşagıdaki gibi direkt olarak array verebiliriz.
+	// //elimizdeki array'ı da buraya yollayabiliriz.
+	// sayilar := []int{4, 5, 6}
+	// fmt.Println(functions.ToplaVariadic(sayilar...))
+
+	maps.Demo1()
 
 }
