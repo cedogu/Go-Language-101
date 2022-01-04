@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golesson/maps"
-)
+import "golesson/for_range"
 
 func main() {
 
@@ -37,6 +35,10 @@ func main() {
 	// sayilar := []int{4, 5, 6}
 	// fmt.Println(functions.ToplaVariadic(sayilar...))
 
-	maps.Demo1()
+	// maps.Demo1()
+
+	//for_range.Demo1()
+	//for_range.Demo2()
+	for_range.Demo3()
 
 }
