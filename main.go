@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"golesson/pointers"
-)
+import "golesson/structs"
 
 func main() {
 
@@ -48,8 +45,10 @@ func main() {
 	// pointers.Demo1(&number)
 	// fmt.Println("Number in the main func is: ", number)
 
-	numbers := []int{1, 2, 3}
-	pointers.Demo2(numbers)
-	fmt.Println(numbers[0])
+	// numbers := []int{1, 2, 3}
+	// pointers.Demo2(numbers)
+	// fmt.Println(numbers[0])
+
+	structs.Demo2()
 
 }
