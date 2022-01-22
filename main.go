@@ -1,6 +1,9 @@
 package main
 
-import "golesson/for_range"
+import (
+	"fmt"
+	"golesson/pointers"
+)
 
 func main() {
 
@@ -39,6 +42,14 @@ func main() {
 
 	//for_range.Demo1()
 	//for_range.Demo2()
-	for_range.Demo3()
+	//for_range.Demo3()
+
+	// number := 20
+	// pointers.Demo1(&number)
+	// fmt.Println("Number in the main func is: ", number)
+
+	numbers := []int{1, 2, 3}
+	pointers.Demo2(numbers)
+	fmt.Println(numbers[0])
 
 }
