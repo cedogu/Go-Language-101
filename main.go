@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golesson/goroutines"
-	"time"
+	"golesson/channels"
 )
 
 func main() {
@@ -55,9 +54,19 @@ func main() {
 
 	// structs.Demo2()
 
-	goroutines.EvenNumbers()
-	goroutines.OddNumbers()
-	time.Sleep(5 * time.Second)
-	fmt.Println("Main is over in 5 secs")
+	// goroutines.EvenNumbers()
+	// goroutines.OddNumbers()
+	// time.Sleep(5 * time.Second)
+	// fmt.Println("Main is over in 5 secs")
+
+	evenNumbersCn := make(chan int)
+	oddNumbersCn := make(chan int)
+	go channels.EvenNumbers(evenNumbersCn)
+	go channels.OddNumbers(oddNumbersCn)
+
+	evenNumbersAdd, oddNumbersAdd := <-evenNumbersCn, oddNumbersCn
+
+	multiplying := evenNumbersAdd * <-oddNumbersAdd
+	fmt.Println("multiplying: ", multiplying)
 
 }
