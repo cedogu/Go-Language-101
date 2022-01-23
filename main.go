@@ -1,6 +1,10 @@
 package main
 
-import "golesson/structs"
+import (
+	"fmt"
+	"golesson/goroutines"
+	"time"
+)
 
 func main() {
 
@@ -49,6 +53,11 @@ func main() {
 	// pointers.Demo2(numbers)
 	// fmt.Println(numbers[0])
 
-	structs.Demo2()
+	// structs.Demo2()
+
+	goroutines.EvenNumbers()
+	goroutines.OddNumbers()
+	time.Sleep(5 * time.Second)
+	fmt.Println("Main is over in 5 secs")
 
 }
