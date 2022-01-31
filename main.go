@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"golesson/channels"
-)
+import "golesson/interfaces"
 
 func main() {
 
@@ -59,14 +56,16 @@ func main() {
 	// time.Sleep(1 * time.Second)
 	// fmt.Println("Main is over")
 
-	evenNumbersCn := make(chan int)
-	oddNumbersCn := make(chan int)
-	go channels.EvenNumbers(evenNumbersCn)
-	go channels.OddNumbers(oddNumbersCn)
+	// evenNumbersCn := make(chan int)
+	// oddNumbersCn := make(chan int)
+	// go channels.EvenNumbers(evenNumbersCn)
+	// go channels.OddNumbers(oddNumbersCn)
 
-	evenNumbersAdd, oddNumbersAdd := <-evenNumbersCn, oddNumbersCn
+	// evenNumbersAdd, oddNumbersAdd := <-evenNumbersCn, oddNumbersCn
 
-	multiplying := evenNumbersAdd * <-oddNumbersAdd
-	fmt.Println("multiplying: ", multiplying)
+	// multiplying := evenNumbersAdd * <-oddNumbersAdd
+	// fmt.Println("multiplying: ", multiplying)
+
+	interfaces.Demo1()
 
 }
