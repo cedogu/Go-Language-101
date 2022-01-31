@@ -66,6 +66,8 @@ func main() {
 	// multiplying := evenNumbersAdd * <-oddNumbersAdd
 	// fmt.Println("multiplying: ", multiplying)
 
-	interfaces.Demo1()
+	// interfaces.Demo1()
+
+	interfaces.Demo2()
 
 }
