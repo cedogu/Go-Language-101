@@ -27,4 +27,4 @@ func OddNumbers(oddNumbersCn chan int) {
 	oddNumbersCn <- addition
 }
 
-//fonksiyon içine parametre olarak channel yolluyoruz, Channel ismi - channel ve channel türünü yolluyoruz.
+//fonksiyon içine parametre olarak channel yolluyoruz, Channel ismi - channel (chan) ve channel türünü yolluyoruz.

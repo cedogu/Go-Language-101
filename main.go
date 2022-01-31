@@ -54,10 +54,10 @@ func main() {
 
 	// structs.Demo2()
 
-	// goroutines.EvenNumbers()
-	// goroutines.OddNumbers()
-	// time.Sleep(5 * time.Second)
-	// fmt.Println("Main is over in 5 secs")
+	// go goroutines.EvenNumbers() //to create a routine we just add "go", pretty easy!
+	// go goroutines.OddNumbers()
+	// time.Sleep(1 * time.Second)
+	// fmt.Println("Main is over")
 
 	evenNumbersCn := make(chan int)
 	oddNumbersCn := make(chan int)
