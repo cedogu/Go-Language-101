@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	errorhandling "golesson/error_handling"
 )
 
@@ -78,6 +79,7 @@ func main() {
 	// deferstatement.Demo3()
 
 	// errorhandling.Demo1()
-	errorhandling.Demo2()
+
+	fmt.Println(errorhandling.GuessNr(102))
 
 }
