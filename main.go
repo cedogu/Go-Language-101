@@ -1,6 +1,6 @@
 package main
 
-import "golesson/interfaces"
+import deferstatement "golesson/defer_statement"
 
 func main() {
 
@@ -68,6 +68,9 @@ func main() {
 
 	// interfaces.Demo1()
 
-	interfaces.Demo2()
+	// interfaces.Demo2()
 
+	// deferstatement.B()
+	// deferstatement.Test()
+	deferstatement.Demo3()
 }
