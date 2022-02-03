@@ -6,10 +6,17 @@ import (
 )
 
 func Demo1() {
-	f, err := os.Open("demo1.txt")
+	f, err := os.Open("demo12.txt") //I changed the name by writing demo12. (main demo1 is in the main area)
 	//nil
 	if err != nil {
-		fmt.Println("File can not be found")
+		if pErr, ok := err.(*os.PathError); ok {
+			fmt.Println("File could not be found", pErr.Path)
+			return
+		} else {
+			fmt.Println("File can not be found")
+			return
+		}
+
 	} else {
 		fmt.Println(f.Name())
 	}
