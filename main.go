@@ -81,6 +81,7 @@ func main() {
 
 	// fmt.Println(errorhandling.GuessNr(102))
 
-	stringfunctions.Demo1()
+	// stringfunctions.Demo1()
+	stringfunctions.Demo2()
 
 }
