@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	errorhandling "golesson/error_handling"
+	stringfunctions "golesson/string_functions"
 )
 
 func main() {
@@ -80,6 +79,8 @@ func main() {
 
 	// errorhandling.Demo1()
 
-	fmt.Println(errorhandling.GuessNr(102))
+	// fmt.Println(errorhandling.GuessNr(102))
+
+	stringfunctions.Demo1()
 
 }
