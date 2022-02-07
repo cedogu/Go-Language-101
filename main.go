@@ -1,8 +1,6 @@
 package main
 
-import (
-	stringfunctions "golesson/string_functions"
-)
+import "golesson/restful"
 
 func main() {
 
@@ -82,6 +80,8 @@ func main() {
 	// fmt.Println(errorhandling.GuessNr(102))
 
 	// stringfunctions.Demo1()
-	stringfunctions.Demo2()
+	//stringfunctions.Demo2()
+
+	restful.Demo1()
 
 }
