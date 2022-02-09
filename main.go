@@ -1,6 +1,6 @@
 package main
 
-import "golesson/restful"
+import "gocourse/project"
 
 func main() {
 
@@ -84,6 +84,8 @@ func main() {
 
 	//restful.Demo1()
 
-	restful.Demo2()
+	// restful.Demo2()
+
+	project.GetAllProducts()
 
 }
