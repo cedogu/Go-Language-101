@@ -47,7 +47,13 @@ func AddProduct() {
 
 	defer response.Body.Close()
 
-	fmt.Println("Saved")
+	bodyBytes, _ := ioutil.ReadAll(response.Body)
+
+	var productResponse Product
+
+	json.Unmarshal(bodyBytes, &productResponse)
+
+	fmt.Println("Saved: ", productResponse)
 
 }
 
