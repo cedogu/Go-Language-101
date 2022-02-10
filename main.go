@@ -1,6 +1,9 @@
 package main
 
-import "gocourse/project"
+import (
+	"fmt"
+	"gocourse/project"
+)
 
 func main() {
 
@@ -88,8 +91,16 @@ func main() {
 
 	// project.GetAllProducts()
 
-	project.AddProduct()
-	project.GetAllProducts()
+	// project.AddProduct()
+	product, _ := project.AddProduct()
+	fmt.Println(product)
+
+	products, _ := project.GetAllProducts()
+	// fmt.Println(products)  if we want to filter products by their names,
+
+	for i := 0; i < len(products); i++ {
+		fmt.Println(products[i].productName)
+	}
 
 }
 
