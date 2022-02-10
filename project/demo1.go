@@ -3,7 +3,6 @@ package project
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 )
@@ -20,10 +19,10 @@ type Category struct {
 	categoryName string `json:"categoryName"`
 }
 
-func GetAllProducts() {
+func GetAllProducts() ([]Product, error) {
 	response, err := http.Get(" http://localhost:3000/products")
 	if err != nil {
-		fmt.Println(err)
+		return nil, err
 	}
 	defer response.Body.Close()
 
@@ -31,10 +30,10 @@ func GetAllProducts() {
 
 	var products []Product
 	json.Unmarshal(bodyBytes, &products)
-	fmt.Println(products)
+	return products, nil
 }
 
-func AddProduct() {
+func AddProduct() (Product, error) {
 
 	product := Product{Id: 4, productName: "Telephone", categoryId: 1, unitPrice: 6000}
 	jsonProduct, err := json.Marshal(product)
@@ -42,7 +41,7 @@ func AddProduct() {
 	response, err := http.Post("http://localhost:3000/products", "application/json;charset=utf-8", bytes.NewBuffer(jsonProduct))
 
 	if err != nil {
-		fmt.Println(err)
+		return Product{}, err
 	}
 
 	defer response.Body.Close()
@@ -53,7 +52,7 @@ func AddProduct() {
 
 	json.Unmarshal(bodyBytes, &productResponse)
 
-	fmt.Println("Saved: ", productResponse)
+	return productResponse, nil
 
 }
 
